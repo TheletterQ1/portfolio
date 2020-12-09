@@ -19,23 +19,21 @@ h2 {
   text-shadow: #fc0 1px 0 10px;
 }
 
-#nav {
-  width: cover;
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  font-size: x-large;
-  background-color: black;
+input {
+  width: 50%;
+  margin: 10px;
+  height: 20px;
 }
-a {
-  color: white;
-  text-decoration: none;
-  display: none;
+
+textarea {
+  width: 50%;
+  height: 40px;
+  margin: 10px;
 }
 
 #main-img {
   width: cover;
-  height: 500px;
+  min-height: 500px;
   background-image: url(https://images.unsplash.com/photo-1570997491915-47ade51fed9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-size: cover;
 }
@@ -140,17 +138,7 @@ img.card-img-top {
   .item:nth-child(3n) {
     grid-column: span 2;
   }
-  a {
-    display: contents;
-    color: white;
-    text-decoration: none;
-  }
-  #hamburger {
-    display: none;
-  }
-  p {
-    font-size: 35;
-  }
+  
   /* #main-img {
           background-size: 50%;
       } */
