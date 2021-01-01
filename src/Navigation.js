@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "./Navigation.css";
 
 const Navigation = () => {
@@ -12,17 +13,19 @@ const Navigation = () => {
   };
 
   return (
-    <nav id="nav" className ="unclicked" onClick={handleClickNav}>
-      Welcome
-      <div class="link">
-        <a href="about.html">About</a>
+    <nav id="nav" className="unclicked" onClick={handleClickNav}>
+      <div id="icons">
+        <a href='https://github.com/TheletterQ1'><div id="github" href="#"></div></a>
+        <a href='https://www.instagram.com/theletterq1/'><div id="IG"></div></a>
+        <a href='https://www.linkedin.com/in/quintonlythgoe'><div id="linkedin" >"</div></a>
       </div>
       <div class="link">
-        <a href="contact.html">Contact</a>
+        <Link to="/About">About</Link>
       </div>
-      <div id="hamburger" >
-        ☰
+      <div class="link">
+        <Link to="/Contact">Contact</Link>
       </div>
+      <div id="hamburger">☰</div>
     </nav>
   );
 };

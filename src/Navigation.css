@@ -3,8 +3,46 @@
   display: flex;
   justify-content: space-around;
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
   background-color: black;
+}
+div #icons {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+div #linkedin {
+    background-image: url('https://p1.hiclipart.com/preview/495/886/336/linkedin-icon-linkedin-logo-icon-logo-icon-website-icon-line-symbol-number-square-metal-png-clipart.jpg');
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin-top: 40px;
+    /* margin-right: 20px; */
+    border-radius: 10px;
+}
+div #IG {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc2Hp5165VRKKBOqsVO8XhzCIDqcHm-g1Lvg&usqp=CAU');
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+}
+div #github {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCbmLVIGyVVDqk_7ey7S1UbliLmqOHVMXJJA&usqp=CAU');
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin-top: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
 }
  nav.unclicked div a {
      float: left;
@@ -13,7 +51,7 @@
 
 #nav.clicked div a {
   float: none;
-  color: white;
+  color: #FEFBF5;
   text-decoration: none;
   display: block;
 }
@@ -33,7 +71,7 @@ nav.clicked #hamburger {
 @media (min-width: 650px) {
   nav.unclicked div a {
     display: contents;
-    color: white;
+    color: #FEFBF5;
     text-decoration: none;
   }
   #hamburger {
