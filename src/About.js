@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-const About = () => {
-  return(
+const About = () => (
+
   <>
-  <div className='pic'></div>
+    <div className='pic'></div>
     <p>
-      My name is Quinton Lythgoe and I'm a coder,digital marketer, and animal
+      My name is Quinton Lythgoe and I'm a coder, digital marketer, and animal
       trainer all wraped in one. Located in sunny Los Angeles, California where
       dreams are said to come true and hopefully i can in some way help you
       accomplish yours On here you will see examples of my work for those
@@ -30,8 +30,9 @@ const About = () => {
       <li className='tech' id='sql'>SQL</li>
     </ul>
     <h1>Experience</h1>
+    <img src='../public/Screen Shot 2021-01-04 at 4.11.58 AM.png' alt='Pause app'/>
 
-    <h2>Animal Care/Training:</h2>
+    {/* <h2>Animal Care/Training:</h2>
     <ul>
       <li>Certified Dog Handler</li>
       <p>possessing the ability to care groom, handle, and oversee dogs</p>
@@ -44,8 +45,8 @@ const About = () => {
     <h1>Experience</h1>
     <h3>New Horizons</h3>
     <p>From 2018-2019 I helped train a plethora of dog breeds to be able to assist the physically and emotionally disabled. This included taking home some dogs for up to 6 months of personal training and development. I absolutely loved the ability to not only be able to make a real impact on helping people with special disabilities, but develop my own training skills to the level they are today. </p>
-   
+    */}
+
   </>
   );
-};
 export default About;

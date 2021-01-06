@@ -21,7 +21,11 @@ h3 {
   font-size: 30px;
 
 }
-
+#pause {
+  height: 20px;
+  width: 25px;
+  background-image: '../public/Screen Shot 2021-01-04 at 4.11.58 AM.png';
+}
 span {
   font-size: 45px;
   text-align: center;
