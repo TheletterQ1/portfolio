@@ -3,6 +3,14 @@ body {
   align-content: center;
 }
 /*change body to black*/
+a{
+  margin: 10px;
+}
+
+#demo {
+  margin-left: 30px;
+}
+
 h1 {
   text-decoration: underline;
   text-align: center;
@@ -137,6 +145,11 @@ p {
   height: 350px;
 }
 
+.tech-holder{
+  display: flex;
+  justify-content: space-between;
+}
+
 .tech {
   display: inline;
   width: 55px;
@@ -167,6 +180,7 @@ p {
 #sass {
   color: white;
   background: olivedrab;
+  width: auto;
 }
 #express {
   background-color: pink;
@@ -287,7 +301,7 @@ font-size: 75px;
     margin:40px;
   }
   a {
-    font-size: 70px;
+    font-size: 50px;
   }
   nav {
     height: 10vh;
