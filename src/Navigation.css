@@ -1,24 +1,27 @@
+a:visited {
+  color: #fec0ca;
+}
+
 #nav {
   width: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: white;
   font-size: xx-large;
   background-color: black;
 }
-div #icons {
-    display: flex;
-    width: 35%;
-    justify-content: space-between;
-    flex-direction: row;
+.icons {
+    /* display: flex; */
+    width: auto;
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
 }
-
 div #linkedin {
     background-image: url('https://p1.hiclipart.com/preview/495/886/336/linkedin-icon-linkedin-logo-icon-logo-icon-website-icon-line-symbol-number-square-metal-png-clipart.jpg');
     height: 40px;
     width: 40px;
     background-size: cover;
-    margin-top: 40px;
+    margin-top: auto;
     /* margin-right: 20px; */
     border-radius: 10px;
 }
@@ -27,7 +30,7 @@ div #IG {
     height: 40px;
     width: 40px;
     background-size: cover;
-    margin-top: 40px;
+    margin-top: auto;
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -38,7 +41,7 @@ div #github {
     height: 40px;
     width: 40px;
     background-size: cover;
-    margin-top: 40px;
+    margin-top: auto;
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -76,6 +79,13 @@ nav.clicked #hamburger {
   }
   #hamburger {
     display: none;
+  }
+  #hamburger:hover {
+    background-color: yellow;
+    pointer-events: stroke;
+  }
+  #hamburger:active {
+    color: pink;
   }
   
   p {

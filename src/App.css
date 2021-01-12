@@ -1,18 +1,44 @@
 body {
-  background-color: rgb(179, 166, 166);
+  background-color: black;
+  /* background-color: rgb(179, 166, 166); */
   align-content: center;
+}
+#home-container {
+  text-align:  center;
 }
 /*change body to black*/
 a{
+  color: lightblue;
+  margin: 10px;
+  font-size: 35px;
+}
+
+a :visited {
+  color: greenyellow;
+}
+
+#who-am-i {
+  color: lightblue;
+  text-align: center;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+text-align: center;
+margin-bottom: 10px;
+}
+
+#demo a {
   margin: 10px;
 }
 
-#demo {
-  margin-left: 30px;
-}
-
 h1 {
+  font-size: 50px;
+  color: white;
   text-decoration: underline;
+  text-decoration-color: #fec0ca;
   text-align: center;
   /* position: relative; */
   margin-left: auto;
@@ -20,18 +46,19 @@ h1 {
 
 h2 {
   font-size: 35px;
-  
-  
   color: blue;
   text-decoration: underline;
 }
 h3 {
+  color: white;
   text-align: center;
   font-size: 30px;
 
 }
 img {
+  border-width: 5px;
   border-style: groove;
+  border-color: yellow;
 }
 #project-holder {
   display: flex;
@@ -117,15 +144,14 @@ textarea {
 p {
   font-size: 30px;
   text-decoration: underline;
-  text-decoration-color: green;
-  background-visibility: 20%;
+  text-decoration-color: #fec0ca;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
-  color: black;
+  color: white;
   padding: 15px;
   line-height: 50px;
   text-align: center;
-  align-self: center;
+
 }
 
 #main-img {
@@ -147,19 +173,20 @@ p {
 
 .tech-holder{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .tech {
   display: inline;
-  width: 55px;
+  width: auto;
   padding: 5px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bolder;
   border-style: double;
   border-color: black;
   border-width: 5px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   margin: 5px;
 }
 
@@ -176,23 +203,33 @@ p {
 #css {
   color: white;
   background: maroon;
+  
 }
-#sass {
+#js {
   color: white;
   background: olivedrab;
   width: auto;
 }
 #express {
-  background-color: pink;
+  color: white;
+  background-color: blue;
+  width: auto;
 }
+
 #mongo {
+  color: white;
   background-color: teal;
+  width: auto;
 }
 #ruby {
-  background-color: white;
+  color: white;
+  background-color: lightcoral;
+  width: auto;
 }
 #sql {
-  background-color: bisque;
+  color: white;
+  background-color: purple;
+  /* width: auto; */
 }
 
 /*////////////ABOUT/////////////////*/
@@ -207,16 +244,21 @@ p {
 }
 
 .pic {
+  display: block;
   background-image: url(https://media-exp1.licdn.com/dms/image/C5603AQGxPAhPCR_l_A/profile-displayphoto-shrink_400_400/0/1606691996478?e=1613001600&v=beta&t=K0cOCu4Uc4I2ibXahScrPB5Xym7LeiJXZa4sE1oOwL4);
-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 75%;
   height: 100vh;
+  border-color: white;
   border-radius: 25px;
   border-style: solid;
   border-width: 15px;
   background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
-  margin-left: 14.5%
+  /* margin-left: 14.5% */
 
 }
 
@@ -282,14 +324,19 @@ img.card-img-top {
 
 } */
 @media (min-width: 450px) {
-#html{
-  max-width: 100%
 
+.tech-holder {
+  flex-direction: row;
 }
+
 #main-img {
-  min-width: 100%
+  min-width: 100%;
+
 }
 
+#demo {
+  flex-direction: row;
+}
 }
 
 @media (min-width: 850px) {
@@ -305,17 +352,19 @@ font-size: 75px;
   }
   nav {
     height: 10vh;
+
   }
-  #main-img {
-    height: 100%;
+  /* #main-img {
+    height: 20%;
     min-width: cover;
     background-size: 100% 100%;
-  }
+  } */
   p {
     font-size: 45px;
   }
   .pic {
     height: 100vh;
+    margin-top: 7px;
   }
   #container {
     flex-direction: row;

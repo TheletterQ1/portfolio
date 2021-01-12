@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import $ from "jquery";
 import "./App.css";
 import Navigation from "./Navigation.js";
-import Projects from "./Projects.js";
+// import Projects from "./Projects.js";
 import {Switch, Route} from 'react-router-dom' 
 import About from "./About"
 import Contact from "./Contact"

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import "./Navigation.css";
 
 const Navigation = () => {
+
   const handleClickNav = () => {
     const clickedNav = document.getElementById("nav");
     if (clickedNav.className === "unclicked") {
@@ -11,14 +12,13 @@ const Navigation = () => {
       clickedNav.className = "unclicked";
     }
   };
-
   return (
     <nav id="nav" className="unclicked" onClick={handleClickNav}>
-      <div id="icons">
-        <a href='https://github.com/TheletterQ1'><div id="github" href="#"></div></a>
-        <a href='https://www.instagram.com/theletterq1/'><div id="IG"></div></a>
-        <a href='https://www.linkedin.com/in/quintonlythgoe'><div id="linkedin" >"</div></a>
-      </div>
+     
+        <a className="icons" href='https://github.com/TheletterQ1'><div id="github" href="#"></div></a>
+        <a className="icons" href='https://www.instagram.com/theletterq1/'><div id="IG"></div></a>
+        <a className="icons" href='https://www.linkedin.com/in/quintonlythgoe'><div id="linkedin" ></div></a>
+      
       <div class="link">
         <Link to="/About">About</Link>
       </div>
